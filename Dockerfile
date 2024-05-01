@@ -3,7 +3,7 @@
 ####################
 
 # COMMON
-FROM ubuntu:22.04 AS app_base
+FROM intel/intel-extension-for-pytorch:2.1.20-xpu AS app_base
 # Pre-reqs
 RUN apt-get update && apt-get install --no-install-recommends -y \
     git vim build-essential python3-dev python3-venv python3-pip
